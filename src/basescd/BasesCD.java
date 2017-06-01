@@ -6,7 +6,12 @@ import javax.swing.JOptionPane;
 
 public class BasesCD {
 
-
+/**
+ * Conectamos con la base que nos asegura la conexion y hacemos un menu
+ * @param args
+ * @throws ClassNotFoundException
+ * @throws SQLException 
+ */
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
        InterfaceSQlite miBD=new InterfaceSQlite("jdbc:sqlite:clase.db");
        miBD.conectar();
